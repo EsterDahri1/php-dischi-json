@@ -42,6 +42,20 @@ Al click su un disco, recuperare e mostrare i dati del disco selezionato.
         </header>
 
         <main>
+            <div v-if="clickedDisc !== null" class="onclick d-flex flex-column align-items-center justify-content-center">
+                <div>
+                    <img width="250" :src="clickedDisc.poster" alt="poster of album" class="img-card-top">
+                    <div class="text-white card-body p-0 d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="pt-3 pb-2 text-center card-title ">{{clickedDisc.title}}</h5>
+                        <small class="">{{clickedDisc.author}}</small>
+                        <h6 class="card-text p-2 ">{{clickedDisc.year}}</h6>
+                        <h6 class="card-text pb-2 ">{{clickedDisc.genre}}</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- /.onclick -->
+
+
             <div class="wrapper p-5">
                 <div class="row g-5 flex-wrap">
                     <div class="col-4" v-for="(disc, index) in discs" :key="index">
@@ -56,6 +70,7 @@ Al click su un disco, recuperare e mostrare i dati del disco selezionato.
                     </div>
                 </div>
             </div>
+            <!--wrapper-->
         </main>
 
     </div>
