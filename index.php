@@ -41,10 +41,10 @@ Al click su un disco, recuperare e mostrare i dati del disco selezionato.
 
         <main>
             <div class="container">
-                <div class="row g-5">
-                    <div class="col-4">
-                        <div class="card" v-for="(disc, index) in discs" :key="index">
-                            <img :src="disc.poster" alt="poster of album" class="img-card-top">
+                <div class="row g-3 flex-wrap">
+                    <div class="col-4" v-for="(disc, index) in discs" :key="index">
+                        <div class="card">
+                            <img width="200" :src="disc.poster" alt="poster of album" class="img-card-top">
                             <div class="card-body">
                                 <h3 class="card-title">{{disc.title}}</h3>
                                 <small>{{disc.author}}</small>
