@@ -6,4 +6,4 @@ $discs = json_decode(file_get_contents('discs.json'), true);
 header('Content-Type: application/json');
 
 #encode the array and echo it out
-echo json_encode($CDs);
+echo json_encode($discs);

@@ -7,10 +7,9 @@ createApp({
     },
     mounted() {
         axios
-            .get('./server.php')
+            .get('server.php')
             .then(response => {
-                console.log(response)
                 this.discs = response.data
             })
     }
-}).mount('app')
+}).mount('#app')
