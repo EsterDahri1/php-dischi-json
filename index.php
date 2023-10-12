@@ -42,9 +42,9 @@ Al click su un disco, recuperare e mostrare i dati del disco selezionato.
         </header>
 
         <main>
-            <div class="onclick d-flex flex-column align-items-center justify-content-center">
-
-                <div>
+            <div v-if="clickedDisc !== null" class="onclick">
+                <button class="m-3 btn text-white border-white">X</button>
+                <div class="d-flex flex-column align-items-center justify-content-center">
                     <img width="250" :src="clickedDisc.poster" alt="poster of album" class="img-card-top">
                     <div class="text-white card-body p-0 d-flex flex-column align-items-center justify-content-center">
                         <h5 class="pt-3 pb-2 text-center card-title ">{{clickedDisc.title}}</h5>

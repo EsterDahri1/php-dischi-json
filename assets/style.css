@@ -21,7 +21,7 @@ main {
 
     & .onclick {
         color: white;
-        background-color: #1d2d3cbd;
+        background-color: #1d2d3cce;
         position: absolute;
         width: 100%;
         z-index: 2;
