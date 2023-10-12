@@ -45,10 +45,10 @@ Al click su un disco, recuperare e mostrare i dati del disco selezionato.
             <div class="wrapper p-5">
                 <div class="row g-5 flex-wrap">
                     <div class="col-4" v-for="(disc, index) in discs" :key="index">
-                        <div class="card p-4 d-flex align-items-center justify-content-center">
+                        <div class="card p-4 d-flex align-items-center justify-content-center" @click="discInfo(index)">
                             <img width="250" :src="disc.poster" alt="poster of album" class="img-card-top">
                             <div class="text-white card-body p-0 d-flex flex-column align-items-center justify-content-center">
-                                <h5 class="p-2 text-center card-title ">{{disc.title}}</h5>
+                                <h5 class="pt-3 pb-2 text-center card-title ">{{disc.title}}</h5>
                                 <small class="">{{disc.author}}</small>
                                 <h6 class="card-text p-2 ">{{disc.year}}</h6>
                             </div>
