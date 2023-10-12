@@ -43,6 +43,7 @@ Al click su un disco, recuperare e mostrare i dati del disco selezionato.
 
         <main>
             <div v-if="clickedDisc !== null" class="onclick d-flex flex-column align-items-center justify-content-center">
+                <a @click="clickedDisc == null" class="btn btn-dark text-white">✖️</a>
                 <div>
                     <img width="250" :src="clickedDisc.poster" alt="poster of album" class="img-card-top">
                     <div class="text-white card-body p-0 d-flex flex-column align-items-center justify-content-center">
