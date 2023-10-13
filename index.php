@@ -42,6 +42,8 @@ Al click su un disco, recuperare e mostrare i dati del disco selezionato.
         </header>
 
         <main>
+
+            <!--Per fare il BONUS bisognava usare la modale di bootstrap bs5-modal-->
             <div v-if="clickedDisc !== null" class="onclick">
                 <button class="m-3 btn text-white border-white">X</button>
                 <div class="d-flex flex-column align-items-center justify-content-center">
